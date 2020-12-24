@@ -4,7 +4,7 @@ const colors = require('colors');
 function createFile(base, limit) {
   return new Promise((resolve, reject) => {
     if (!Number(base)) {
-      reject(`El valor introducido ${base} no es un número`)
+      reject(`The value entered ${base} is not a number`)
       return
     }
     let data = '';
@@ -23,7 +23,7 @@ function createFile(base, limit) {
 
 function listTable(base, limit = 10) {
   console.log('======================================'.green)
-  console.log('Tabla de ${base} al ${limite}'.green)
+  console.log('Table from ${base} to ${limite}'.green)
   console.log('======================================'.green)
   for (let i = 1; i <= limit; i++) {
     console.log(`${base} * ${i} = ${base * i}`)
